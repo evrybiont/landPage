@@ -80,3 +80,6 @@ a.navbar-brand {
   color: white;
   font-family: Comic Sans MS;
 }
+.term h1 {
+  font-size: 52px !important;
+}
