@@ -1,91 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-   <script src="js/bootstrap.js"></script>
-
-   <style type="text/css" media="screen">
-    body {
-      background-image: url('flag.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-    }
-
-    .navbar-default {
-      background-image: none;
-      background-color: transparent;
-      box-shadow: none;
-      border-color: transparent;
-      color: white !important;
-    }
-
-    a.navbar-brand {
-      color: white !important;
-    }
-
-    footer {
-      background-color: black;
-      bottom: 0;
-      height: 100px;
-      position: absolute;
-      width: 100%;
-    }
-
-    .btn-space {
-      margin-right: 5px;
-    }
-
-    .btn-white { 
-      color: #ffffff; 
-      background-color: #ED2839; 
-    } 
- 
-    .btn-white:hover, 
-    .btn-white:focus, 
-    .btn-white:active, 
-    .btn-white.active, 
-    .open .dropdown-toggle.btn-white { 
-      color: #3EBBF5; 
-      background-color: #FFFFFF; 
-    }
-
-    .centered {
-      text-align: center;
-    }
-
-    .term {
-      color: white;
-      font-family: Comic Sans MS;
-    }
-
-    footer .links {
-      margin: 20px 0;
-    }
-
-    footer .links a {
-      color: white;
-      margin-left: 10px;
-      text-decoration: none;
-    }
-   </style>
+  <link rel='stylesheet' type='text/css' href='css/bootstrap.min.css'>
+  <link rel='stylesheet' type='text/css' href='css/bootstrap-theme.min.css'>
+  <link rel='stylesheet' type='text/css' href='css/bootstrap-datepicker.min.css'>
+  <link rel='stylesheet' type='text/css' href='css/land.css'>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>
+  <script src='js/bootstrap.min.js'></script>
+  <script src='js/bootstrap-datepicker.min.js'></script>
+  <script src='js/init.js'></script>
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+  <nav class='navbar navbar-inverse navbar-fixed-bottom'>
+    <div class='container-fluid'>
+      <div class='navbar-header'>
+        <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-2' aria-expanded='false'>
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
         </button>
       </div>
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-        <ul class="nav navbar-nav navbar-left">
+      <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-2'>
+        <ul class='nav navbar-nav navbar-left'>
           <li><a href="#">ABOUT</a></li>
           <li><a href="#">CREATE ADVERT</a></li>
           <li><a href="#">CREATE PAGE</a></li>
@@ -99,70 +37,85 @@
       </div>
     </div>
   </nav>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">LOGO</a>
-      </div>
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><button type="button" class="btn btn-white navbar-btn btn-space">SIGN IN</button></li>
-          <li><button type="button" class="btn btn-white navbar-btn">SIGN UP</button></li>
-        </ul>
+  <nav class='navbar navbar-default'>
+    <div class='container-fluid'>
+      <div class='navbar-header'>
+        <a class='navbar-brand' href='#'>LOGO</a>
       </div>
     </div>
   </nav>
 
   <div class='container-fluid'>
     <div class='row'>
-      <div class='col-md-6 centered term'>
+      <div class='centered col-xs-5 col-sm-6 col-md-6 col-lg-6 term'>
         <div><h1>BE SOCIAL</h1></div>
         <div><h1>BE PODUCTIVE</h1></div>
-        <div></div>
       </div>
 
-      <div class='col-md-6 centered'>
-        Form
-        <!--<ul class='nav nav-tabs'>-->
-        <!--<li class='active'><a data-toggle='tab' href='#sign_in'>SIGN IN</a></li>-->
-        <!--<li><a data-toggle='tab' href='#sign_up'>SIGN UP</a></li>-->
-        <!--</ul>-->
-        <!---->
-        <!--<div class="tab-content">-->
-        <!--<div id="home" class="tab-pane fade in active">-->
-        <!--<h3>HOME</h3>-->
-        <!--<p>Some content.</p>-->
-        <!--</div>-->
-        <!--<div id="menu1" class="tab-pane fade">-->
-        <!--<h3>Menu 1</h3>-->
-        <!--<p>Some content in menu 1.</p>-->
-        <!--</div>-->
-        <!--</div>-->
+      <div class='centered col-xs-offset-1 col-xs-6 col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-4 col-lg-offset-3 col-lg-2'>
+        <div class='container-fluid sign-form-container'>
+          <ul class='row nav nav-pills'>
+            <li class='active'><a data-toggle='tab' href='#sign_in'>SIGN IN</a></li>
+            <li><a data-toggle='tab' href='#sign_up'>SIGN UP</a></li>
+          </ul>
+
+          <div class='tab-content'>
+            <div id='sign_in' class='tab-pane fade in active'>
+              <form>
+                <div class='form-group'>
+                  <input type='email' class='form-control' id='email' placeholder='Email'>
+                </div>
+                <div class='form-group'>
+                  <input type='password' class='form-control' id='password' placeholder='Password'>
+                </div>
+                <button type='submit' class='btn btn-success col-xs-12 col-sm-12 col-md-12 col-lg-12'>Sign in</button>
+              </form>
+            </div>
+
+            <div id='sign_up' class='tab-pane fade'>
+              <form>
+                <div class='form-group'>
+                  <input type='text' class='form-control' id='first_name' placeholder='First Name'>
+                </div>
+                <div class='form-group'>
+                  <input type='email' class='form-control' id='surname' placeholder='Surname'>
+                </div>
+                <div class='form-group'>
+                  <input type='email' class='form-control' id='email' placeholder='Email'>
+                </div>
+                <div class='form-group'>
+                  <input type='password' class='form-control' id='password' placeholder='Password'>
+                </div>
+                <div class='form-group'>
+                  <input type='password' class='form-control' id='confirm_password' placeholder='Confirm Password'>
+                </div>
+                <div class='form-group'>
+                  <div class='input-group date' id='datepicker'>
+                    <input type='text' class='form-control' placeholder='Birthday'/>
+                    <span class='input-group-addon'>
+                      <span class='glyphicon glyphicon-calendar'></span>
+                    </span>
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <div class='btn-group' data-toggle='buttons'>
+                    <label class='btn btn-default'>
+                      <input type='radio' name='gender' value='male'/> Male
+                    </label>
+                    <label class='btn btn-default'>
+                      <input type='radio' name='gender' value='female'/> Female
+                    </label>
+                  </div>
+                </div>
+
+                <button type='submit' class='btn btn-success col-xs-12 col-sm-12 col-md-12 col-lg-12'>Sign in</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-  <!--<footer class='footer'>-->
-  <!--<div class='container-fluid'>-->
-  <!--<p class='links'>-->
-  <!--<a href="#">ABOUT</a>-->
-  <!--<a href="#">CREATE ADVERT</a>-->
-  <!--<a href="#">CREATE PAGE</a>-->
-  <!--<a href="#">CAREERS</a>-->
-  <!--<a href="#">DEVELOPERS</a>-->
-  <!--<a href="#">JOBS</a>-->
-  <!--<a href="#">EDUCATION</a>-->
-  <!--<a href="#">FREELANCE</a>-->
-  <!--<a href="#">PRIVACY</a>-->
-  <!--</p>-->
-  <!--</div>-->
-  <!--</footer>-->
 </body>
 </html>
