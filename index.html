@@ -1,34 +1,168 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+   <script src="js/bootstrap.js"></script>
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+   <style type="text/css" media="screen">
+    body {
+      background-image: url('flag.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    .navbar-default {
+      background-image: none;
+      background-color: transparent;
+      box-shadow: none;
+      border-color: transparent;
+      color: white !important;
+    }
+
+    a.navbar-brand {
+      color: white !important;
+    }
+
+    footer {
+      background-color: black;
+      bottom: 0;
+      height: 100px;
+      position: absolute;
+      width: 100%;
+    }
+
+    .btn-space {
+      margin-right: 5px;
+    }
+
+    .btn-white { 
+      color: #ffffff; 
+      background-color: #ED2839; 
+    } 
+ 
+    .btn-white:hover, 
+    .btn-white:focus, 
+    .btn-white:active, 
+    .btn-white.active, 
+    .open .dropdown-toggle.btn-white { 
+      color: #3EBBF5; 
+      background-color: #FFFFFF; 
+    }
+
+    .centered {
+      text-align: center;
+    }
+
+    .term {
+      color: white;
+      font-family: Comic Sans MS;
+    }
+
+    footer .links {
+      margin: 20px 0;
+    }
+
+    footer .links a {
+      color: white;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+   </style>
 </head>
 <body>
-<!-- Standard button -->
-<button type="button" class="btn btn-default">Default</button>
+  <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
 
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" class="btn btn-primary">Primary</button>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CREATE ADVERT</a></li>
+          <li><a href="#">CREATE PAGE</a></li>
+          <li><a href="#">CAREERS</a></li>
+          <li><a href="#">DEVELOPERS</a></li>
+          <li><a href="#">JOBS</a></li>
+          <li><a href="#">EDUCATION</a></li>
+          <li><a href="#">FREELANCE</a></li>
+          <li><a href="#">PRIVACY</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">LOGO</a>
+      </div>
 
-<!-- Indicates a successful or positive action -->
-<button type="button" class="btn btn-success">Success</button>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><button type="button" class="btn btn-white navbar-btn btn-space">SIGN IN</button></li>
+          <li><button type="button" class="btn btn-white navbar-btn">SIGN UP</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<!-- Contextual button for informational alert messages -->
-<button type="button" class="btn btn-info">Info</button>
+  <div class='container-fluid'>
+    <div class='row'>
+      <div class='col-md-6 centered term'>
+        <div><h1>BE SOCIAL</h1></div>
+        <div><h1>BE PODUCTIVE</h1></div>
+        <div></div>
+      </div>
 
-<!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn btn-warning">Warning</button>
+      <div class='col-md-6 centered'>
+        Form
+        <!--<ul class='nav nav-tabs'>-->
+        <!--<li class='active'><a data-toggle='tab' href='#sign_in'>SIGN IN</a></li>-->
+        <!--<li><a data-toggle='tab' href='#sign_up'>SIGN UP</a></li>-->
+        <!--</ul>-->
+        <!---->
+        <!--<div class="tab-content">-->
+        <!--<div id="home" class="tab-pane fade in active">-->
+        <!--<h3>HOME</h3>-->
+        <!--<p>Some content.</p>-->
+        <!--</div>-->
+        <!--<div id="menu1" class="tab-pane fade">-->
+        <!--<h3>Menu 1</h3>-->
+        <!--<p>Some content in menu 1.</p>-->
+        <!--</div>-->
+        <!--</div>-->
+      </div>
+    </div>
+  </div>
 
-<!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn btn-danger">Danger</button>
-
-<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-<button type="button" class="btn btn-link">Link</button></body>
+  <!--<footer class='footer'>-->
+  <!--<div class='container-fluid'>-->
+  <!--<p class='links'>-->
+  <!--<a href="#">ABOUT</a>-->
+  <!--<a href="#">CREATE ADVERT</a>-->
+  <!--<a href="#">CREATE PAGE</a>-->
+  <!--<a href="#">CAREERS</a>-->
+  <!--<a href="#">DEVELOPERS</a>-->
+  <!--<a href="#">JOBS</a>-->
+  <!--<a href="#">EDUCATION</a>-->
+  <!--<a href="#">FREELANCE</a>-->
+  <!--<a href="#">PRIVACY</a>-->
+  <!--</p>-->
+  <!--</div>-->
+  <!--</footer>-->
+</body>
 </html>
